@@ -68,7 +68,7 @@ class Mute(commands.Cog):
             self.client,
             config['logChannel'],
             ctx.guild.id,
-            'Kick',
+            'Mute',
             f'**{ctx.author.mention}, {member.mention} Kullanıcısını {seconds} saniyeliğine susturdu.**'
         )
         await logger.sendLogEmbed()
@@ -96,7 +96,7 @@ class Mute(commands.Cog):
                     self.client,
                     config['logChannel'],
                     ctx.guild.id,
-                    'Kick',
+                    'Unmute',
                     f'**{ctx.author.mention}, {member.mention} Kullanıcısının susturunu kaldırdı.**'
                 )
                 await logger.sendLogEmbed()

@@ -28,7 +28,7 @@ class Role(commands.Cog):
             self.client,
             config['logChannel'],
             ctx.guild.id,
-            'Kick',
+            'Rol Ekleme',
             f'**{ctx.author.mention}, {member.mention} Kullanıcısına {role.mention} rolünü verdi.**'
         )
         await logger.sendLogEmbed()
@@ -42,7 +42,7 @@ class Role(commands.Cog):
             self.client,
             config['logChannel'],
             ctx.guild.id,
-            'Kick',
+            'Rol Kaldırma',
             f'**{ctx.author.mention}, {member.mention} Kullanıcısından {role.mention} rolünü aldı.**'
         )
         await logger.sendLogEmbed()
