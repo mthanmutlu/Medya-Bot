@@ -16,7 +16,7 @@ class Help(commands.Cog):
 
     @commands.command(name='help')
     async def help(self, ctx: Context):
-        prefix = '!'
+        prefix = '.'
         embed = discord.Embed()
         embed.color = randColor()
         embed.title = 'HELP'
